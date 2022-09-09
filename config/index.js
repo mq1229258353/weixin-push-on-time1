@@ -4,35 +4,17 @@ export const config = {
      */
 
     // 公众号APP_ID
-    APP_ID: "wx544b2d50b18cdc23",
+    APP_ID: "wx3d9faa0e598dd6b4",
 
     // 公众号APP_SECRET
-    APP_SECRET: "158d1d53029246aef955602f8355809e",
+    APP_SECRET: "7a0f6a8f668cf3ba198a1084e2f488f2",
 
     // 模板消息id
-    TEMPLATE_ID: "Tp3Fmyxt5yvY-Lwe5KenzCD4E6rQTrVdtm6BwrTCFgA",
-
-    // 回调消息模板id, 用来看自己有没有发送成功的那个模板
-    CALLBACK_TEMPLATE_ID: "Tp3Fmyxt5yvY-Lwe5KenzCD4E6rQTrVdtm6BwrTCFgA",
+    TEMPLATE_ID: "xvaGbzGYiUg9vpLXdln_feTcoNIGm-K77HYV8UBzkuk",
 
 
-    /**
-     * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔，例如
-     * [
-     *   {name: '小瑞子', id: "osV6d51DNA077KUDSmBvtYOUTqa4"}, 
-     *   {name: '老婆1', id: "2hxOO6VskYv0Kuf-y你懂的,填错狗头打烂RMpuXhk"},
-     * ]
-     */
-    USERS: [
-      {name: '小瑞子', id: "osV6d51DNA077KUDSmBvtYOUTqa4"}, 
-      //{name: '老婆1', id: "2hxOO6VskYv0Kuf-y你懂的,填错狗头打烂RMpuXhk"}, 
-      //{name: '老婆2', id: "3hxOO6VskYv0Kuf-yw你懂的,填错狗头打烂2RMpuXhk"}, 
-      //{name: '老婆3', id: "4hxOO6VskYv0Kuf-ywI你懂的,填错狗头打烂MpuXhk"}, 
-    ],
-    // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
-    CALLBACK_USERS: [
-      {name: '自己',id: "osV6d51DNA077KUDSmBvtYOUTqa4"}, 
-    ],
+    // 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔，例如[wx1,wx2]
+  USERS: ["oJxMU6Sefbv9bK4Op2WDx5HXh5J8"],
      
     /**
      * 信息配置
@@ -41,9 +23,9 @@ export const config = {
     /** 天气相关 */
 
     // 所在省份
-    PROVINCE: "山东",
+    PROVINCE: "乌鲁木齐",
     // 所在城市
-    CITY: "聊城",
+    CITY: "乌鲁木齐",
 
     /** 重要节日相关 */
 
@@ -54,9 +36,8 @@ export const config = {
      * 节日时，name填写相应展示的节日，你可以填“被搭讪纪念日”
      */
     FESTIVALS: [
-      {"type": "生日", "name": "小仙友", "year": "2000", "date": "11-26"},
-      {"type": "生日", "name": "小瑞子", "year": "2001", "date": "10-10"},
-      {"type": "节日", "name": "纪念日", "year": "2020", "date": "01-19"},
+      {"type": "生日", "name": "闹闹宝贝", "year": "1997", "date": "11-30"},
+      {"type": "节日", "name": "纪念日", "year": "2021", "date": "05-20"},
     ],
 
     /**
@@ -69,21 +50,10 @@ export const config = {
 
     /** 日期相关 */
 
-    /** 你现在可以随心增加你认为的所有的需要纪念的日子啦！
-      * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
-      * 比如：keyword: "love_date" ，在测试号中就是 {{ love_date.DATA }} 
-      * */
-    CUSTOMIZED_DATE_LIST: [
+      // 生日
+      BIRTHDAY_DATE: "1997-11-30",
       // 在一起的日子
-      {"keyword": "love_day", date: "2020-01-19"},
-      // 结婚纪念日
-      //{"keyword": "marry_day", date: "2020-01-04"},
-      // 退伍日, 不用可以删掉
-      //{"keyword": "ex_day", date: "2022-08-31"},
-      // sakana日
-      // {"keyword": "sakana_day", date: "2022-01-06"},
-      // ... 
-    ],
+      LOVE_DATE: "2021-05-20",
 
     /** 插槽 */
 
@@ -92,14 +62,16 @@ export const config = {
       * 比如：keyword: "lover_prattle" ，在测试号中就是 {{ lover_prattle.DATA }} 
       * */
     SLOT_LIST: [
-      // 这样配置的话，就会每次发送这句话
-      //{"keyword": "encourage_oneself", contents: "你主要的问题在于读书太少而想得太多"},
       // 这样配置的话，就会每次随机选一句话发送
       {"keyword": "lover_prattle", contents: [
-        "因为太喜欢你，所以看谁都像是情敌。",
-        "申请成为你爱里的永久居民。",
-        "你很傻，你很笨，可我还是很羡慕你，因为你有我",
-        "遇见你，就好像捡到了100斤的运气",
+        "你要永远在我身边噢!",
+        "不管见不见面，你都在我心里呀~",
+        "只希望每个明天你都在。",
+        "你永远都是我的only one~",
+        "不见面的日子，要好好积攒爱意呀~",
+        "恋爱终极奥义：一定是我们永远在乎彼此！",
+        "一朝相识百相思。",
+        "乖乖，我会eeeee直在你身边!!",
       ]},
     ],
 
@@ -118,7 +90,6 @@ export const config = {
 // 最低气温: {{min_temperature.DATA}}  
 // 最高气温: {{max_temperature.DATA}}  
 // 今天是我们恋爱的第{{love_day.DATA}}天
-// 今天是我们结婚的第{{marry_day.DATA}}天
 // {{birthday_message.DATA}}
 
 // {{note_en.DATA}}  
